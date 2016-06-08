@@ -1,0 +1,97 @@
+body {
+	background-image: url(winkingicecreamskull.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	background-color: #D3DDF5;
+	font-size: 14px;
+	color: #545A5C;
+}
+
+h1,
+h2,
+p.sig,
+#sigOrder,
+p.choice_1,
+p.choice_2,
+.checkout p,
+#order {
+	text-align: center;
+} 
+
+h1 {
+	font-family: 'Nosifer', cursive;
+	color: #1C9E86;
+	font-size: 5em;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2em;
+	margin-top: 0;
+}
+
+p,
+legend,
+#sigOrder {
+	font-size: 1.5em;
+}
+
+p.sig,
+#sigOrder,
+#order {
+	font-weight: bold;
+}
+
+#order,
+#sigFlav {
+	color: #9D55B5;
+}
+
+
+form {
+	display: none;
+	margin: 50px auto;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+	float: left;
+}
+
+form label {
+	text-align: left;
+	padding-left: 10px;
+}
+
+fieldset {
+	border: none;
+	margin: 0 auto;
+}
+
+legend {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.checkout-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.checkout-flex input[type="button"] {
+	background-color: #1C9E86;
+	color: #fff;
+	padding: 10px;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+#order {
+	padding: 20px 150px;
+}
+
+
+

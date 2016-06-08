@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ice Cream Shop</title>
+	<link rel="stylesheet" type="text/css" href="ice_cream.css">
+	<link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:900,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<h1>God's Goods</h1>
+<h2>Ice cream so unorthodox that it ought to be a sin</h2>
+
+<!--Signature ice cream of the day-->
+<p class="sig">Try our signature creation of the day: <span id="sigFlav"></span></p>
+
+<!--options to choose signature ice cream or custom ice cream-->
+<p class="choice_1">
+	<input type="radio" onclick="chooseSig()" name="option" id="pickSig">
+	<label for="pickSig">Hell yeah, lets do this!</label>
+</p>
+<p class="choice_2">
+	<input type="radio" onclick="chooseCustom()" name="option" id="custom">
+	<label for="custom">Hell nah, I want to build my own sinful delight!</label>
+</p>	
+<p id="sigOrder"></p>
+
+<!--custom ice cream option-->
+
+<!--CHOOSE FLAVOUR-->
+<form>
+<fieldset>
+<legend>Choose a flavour!</legend>
+	<p>
+	    <input type="radio" name="flavour" value="Curry Carrot">
+	    <label for="flav">Curry Carrot</label>
+	 </p>   
+	<p> 
+	    <input type="radio" name="flavour" value="Candied Bacon">
+	    <label for="flav">Candied Bacon</label>
+	</p>   
+	<p> 
+	    <input type="radio" name="flavour" value="Sweet Corn">
+	    <label for="flav">Sweet Corn</label>
+	</p> 
+	<p> 
+	    <input type="radio" name="flavour" value="Bourbon and Conflakes">
+	    <label for="flav">Bourbon and Conflakes</label>
+	</p>
+	<p> 
+	    <input type="radio" name="flavour" value="Vietnamese Coffee">
+	    <label for="flav">Vietnamese Coffee</label>
+	</p>
+	<p> 
+	    <input type="radio" name="flavour" value="Durian Delight">
+	    <label for="flav">Durian Delight</label>
+	</p>
+	<p> 
+	    <input type="radio" name="flavour" value="Jackfruit">
+	    <label for="flav">Jackfruit</label>
+	</p>
+	<p> 
+	    <input type="radio" name="flavour" value="Rosemary Honey Goat's Milk">
+	    <label for="flav">Rosemary Honey Goat's Milk</label>
+	</p>
+	<p> 
+	    <input type="radio" name="flavour" value="Ginger Wasabi">
+	    <label for="flav">Ginger Wasabi</label>
+	</p>
+	<p> 
+	    <input type="radio" name="flavour" value="Honey Jalapeño Pickle">
+	    <label for="flav">Fig and Goat Cheese Swirl</label>
+	</p>
+	<p> 
+	    <input type="radio" name="flavour" value="Salted Umeboshi Plum">
+	    <label for="flav">Salted Umeboshi Plum</label>
+	</p>
+	<p> 
+	    <input type="radio" name="flavour" value="Rosewater">
+	    <label for="flav">Rosewater</label>
+	</p>
+	<p> 
+		<input type="radio" name="flavour" value="Wildberry Lavender">
+		<label for="flav">Wildberry Lavender</label>
+	</p>
+	<p> 
+		<input type="radio" name="flavour" value="White Truffle">
+		<label for="flav">White Truffle</label>
+	</p>
+	<p> 
+		<input type="radio" name="flavour" value="Basil Avocado">
+		<label for="flav">Basil Avocado</label>
+	</p>
+	<p> 
+		<input type="radio" name="flavour" value="Salted Caramel">
+		<label for="flav">Salted Caramel</label>
+	</p>
+</fieldset>
+
+<!--CHOOSE 3 TOPPINGS-->
+<fieldset>
+<legend id>Choose up to 3 toppings!</legend>
+<p>
+	<input type="checkbox" name="topping" value="Organic date syrup">
+	<label for="topping">Organic date syrup</label>
+</p>	
+<p>
+	<input type="checkbox" name="topping" value="Vanilla fleur de sel">
+	<label for="topping">Vanilla fleur de sel</label>
+</p>
+<p>
+	<input type="checkbox" name="topping" value="Crystallized ginger">
+	<label for="topping">Crystallized ginger</label>
+</p>
+<p>
+	<input type="checkbox" name="topping" value="Toasted pepitas">
+	<label for="topping">Toasted pepitas</label>
+</p>
+<p>
+	<input type="checkbox" name="topping" value="Pomegranate molasses">
+	<label for="topping">Pomegranate molasses</label>
+</p>
+<p>
+	<input type="checkbox" name="topping" value="Coffee jelly cubes">
+	<label for="topping">Coffee jelly cubes</label>
+</p>
+<p>
+	<input type="checkbox" name="topping" value="Toasted coconut">
+	<label for="topping">Toasted coconut</label>
+</p>	
+<p>
+	<input type="checkbox" name="topping" value="Graham cracker crumbs">
+	<label for="topping">Graham cracker crumbs</label>
+</p>	
+<p>
+	<input type="checkbox" name="topping" value="Balsamic reduction">
+	<label for="topping">Balsamic reduction</label>
+</p>	
+<p>
+	<input type="checkbox" name="topping" value="Olive oil granola">
+	<label for="topping">Olive oil granola</label>
+</p>	
+<p>
+	<input type="checkbox" name="topping" value="Edible lavender florets">
+	<label for="topping">Edible lavender florets</label>
+</p>	
+<p>
+	<input type="checkbox" name="topping" value="Salted Spanish peanuts">
+	<label for="topping">Salted Spanish peanuts</label>
+</p>	
+<p>
+	<input type="checkbox" name="topping" value="Buttered popcorn">
+	<label for="topping">Buttered popcorn</label>
+</p>
+<p>
+	<input type="checkbox" name="topping" value="Chocolate pearls">
+	<label for="topping">Chocolate pearls</label>
+</p>
+<p>
+	<input type="checkbox" name="topping" value="Raspberry chipotle sauce">
+	<label for="topping">Raspberry chipotle sauce</label>
+</p>		
+<p>
+	<input type="checkbox" name="topping" value="Ore-Ida french Fries ">
+	<label for="topping">Ore-Ida french fries </label>
+</p>	
+</fieldset>
+
+<fieldset>
+<legend>Now choose your cone!</legend>
+	<p> 
+	    <input type="radio" name="cone" value="Cake cone">
+	    <label for="cone">Cake cone</label>
+	</p>
+	<p> 
+	    <input type="radio" name="cone" value="Sugar cone">
+	    <label for="cone">Sugar cone</label>
+	</p>
+	<p> 
+	    <input type="radio" name="cone" value="Pretzel cone">
+	    <label for="cone">Pretzel cone</label>
+	</p>
+		<p> 
+	    <input type="radio" name="cone" value="Waffle cone">
+	    <label for="cone">Waffle cone</label>
+	</p>
+		<p> 
+	    <input type="radio" name="cone" value="Waffle bowl">
+	    <label for="cone">Waffle bowl</label>
+	</p>
+</fieldset>
+</form>
+
+<!--review order-->
+<div class ="checkout-flex">
+<p>Ready to have your taste buds enlightened?</p>
+<input type = "button" onclick="reviewOrder()"" value="Bless my mouth!"/>
+<p id="order"></p>
+</div>
+
+<!--jQuery & Javascript sources-->
+<script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="ice_cream.js"></script>
+	
+</body>
+</html>
